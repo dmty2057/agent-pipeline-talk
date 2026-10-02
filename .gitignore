@@ -1,0 +1,6 @@
+node_modules
+.env
+data/fixtures/
+# eval runs are local; the runs shown in the slides are kept in runs/stage/
+runs/*
+!runs/stage/

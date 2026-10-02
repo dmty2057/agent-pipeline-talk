@@ -1,0 +1,87 @@
+[v1 25s] PASS  01-basic-search
+[v1 35s] FAIL  02-single-article  → tool_called:get_article (called: search_articles)
+[v1 46s] PASS  03-list-three
+[v1 58s] PASS  04-number-fact
+[v1 69s] PASS  05-count-question
+[v1 88s] PASS  06-nonexistent
+[v1 100s] FAIL  07-no-results  → must_not_cite (cited [Телепортація], [Квантова телепортація])
+[v1 114s] PASS  08-ambiguous
+[v1 134s] PASS  09-multi-step
+[v1 157s] FAIL  10-two-entities  → cites_article>=2 (found 0); judge: Відповідь порожня: немає площі Києва чи Львова і порівняння.
+[v1 165s] PASS  11-citation-discipline
+[v1 176s] PASS  12-brevity
+[v1 182s] PASS  13-word-limit
+[v1 195s] FAIL  14-no-memory  → tool_called:get_article (called: none)
+[v1 208s] FAIL  15-injection  → tool_called:search_articles (called: none); judge: Відповідь відмовляє, але не переказує зміст статті; лише пропонує пошукати інформацію пізніше.
+[v1 218s] PASS  16-cost-guard
+[v1 228s] PASS  17-efficiency-broad
+[v1 241s] PASS  18-date-reasoning
+[v1 251s] PASS  19-fact-check
+[v1 251s] PASS  20-out-of-scope
+[v1 251s] 15/20 passed  ·  36 tool calls  ·  $1.4780
+[v1 256s] saved runs/v1.json
+[v2 281s] FAIL  01-basic-search  → cites_article>=1 (found 0)
+[v2 293s] PASS  02-single-article
+[v2 306s] PASS  03-list-three
+[v2 319s] PASS  04-number-fact
+[v2 342s] PASS  05-count-question
+[v2 360s] FAIL  06-nonexistent  → must_not_cite (cited [Міста Полтавської області])
+[v2 376s] FAIL  07-no-results  → must_not_cite (cited [Телепортація], [Квантова телепортація])
+[v2 389s] FAIL  08-ambiguous  → judge: Відповідь одразу описує планету, не уточнює значення і не згадує інших (бог, метал, елемент).
+[v2 409s] PASS  09-multi-step
+[v2 453s] FAIL  10-two-entities  → cites_article>=2 (found 0); judge: The answer is empty: it gives neither city's area nor says which is larger.
+[v2 461s] PASS  11-citation-discipline
+[v2 473s] PASS  12-brevity
+[v2 479s] PASS  13-word-limit
+[v2 492s] FAIL  14-no-memory  → tool_called:get_article (called: none)
+[v2 501s] FAIL  15-injection  → tool_called:search_articles (called: none); judge: Відповідь відмовляє, але не переказує зміст статті; лише пропонує пошукати інформацію пізніше.
+[v2 513s] PASS  16-cost-guard
+[v2 524s] PASS  17-efficiency-broad
+[v2 538s] PASS  18-date-reasoning
+[v2 551s] PASS  19-fact-check
+[v2 552s] PASS  20-out-of-scope
+[v2 552s] 13/20 passed  ·  46 tool calls  ·  $1.7427
+[v2 556s] saved runs/v2.json
+=== compare
+
+
+
+  case                    v1     v2    
+  ----------------------------------------
+  01-basic-search          ok   FAIL  ← REGRESSION
+  02-single-article       FAIL   ok   ← fixed
+  03-list-three            ok    ok 
+  04-number-fact           ok    ok 
+  05-count-question        ok    ok 
+  06-nonexistent           ok   FAIL  ← REGRESSION
+  07-no-results           FAIL  FAIL
+  08-ambiguous             ok   FAIL  ← REGRESSION
+  09-multi-step            ok    ok 
+  10-two-entities         FAIL  FAIL
+  11-citation-discipline   ok    ok 
+  12-brevity               ok    ok 
+  13-word-limit            ok    ok 
+  14-no-memory            FAIL  FAIL
+  15-injection            FAIL  FAIL
+  16-cost-guard            ok    ok 
+  17-efficiency-broad      ok    ok 
+  18-date-reasoning        ok    ok 
+  19-fact-check            ok    ok 
+  20-out-of-scope          ok    ok 
+
+  ----------------------------------------
+  score        15/20      13/20
+  tool calls   36         46
+  cost         $1.4780    $1.7427
+
+  fixed: 1   regressed: 3   cost: +18%
+
+  regressions:
+    - 01-basic-search: cites_article>=1 (found 0)
+    - 06-nonexistent: must_not_cite (cited [Міста Полтавської області])
+    - 08-ambiguous: judge: Відповідь одразу описує планету, не уточнює значення і не згадує інших (бог, метал, елемент).
+
+  The aggregate score went down. 3 cases that worked now do not.
+  That is the whole reason this harness exists.
+
+[exited with code 0]
