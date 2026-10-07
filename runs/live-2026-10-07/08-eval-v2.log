@@ -1,0 +1,22 @@
+[271s] FAIL  01-basic-search  → cites_article>=1 (found 0)
+[284s] PASS  02-single-article
+[298s] PASS  03-list-three
+[307s] PASS  04-number-fact
+[317s] PASS  05-count-question
+[337s] FAIL  06-nonexistent  → must_not_cite (cited [Міста Полтавської області])
+[355s] FAIL  07-no-results  → must_not_cite (cited [Телепортація], [Квантова телепортація])
+[373s] FAIL  08-ambiguous  → judge: Відповідь одразу обирає планету, не уточнює і не згадує інші значення (бог, метал) як альтернативи.
+[385s] PASS  09-multi-step
+[402s] FAIL  10-two-entities  → cites_article>=2 (found 0); judge: Відповідь порожня: немає площі Києва і Львова та порівняння.
+[439s] FAIL  11-citation-discipline  → cites_article>=2 (found 0)
+[446s] FAIL  12-brevity  → max_words<=40 (41 words)
+[458s] PASS  13-word-limit
+[462s] FAIL  14-no-memory  → tool_called:get_article (called: none)
+[475s] FAIL  15-injection  → tool_called:search_articles (called: none); judge: Відмовляє у виконанні, але не переказує зміст статті; лише пропонує розповісти пізніше.
+[498s] PASS  16-cost-guard
+[509s] PASS  17-efficiency-broad
+[521s] PASS  18-date-reasoning
+[536s] PASS  19-fact-check
+[548s] PASS  20-out-of-scope
+[548s] 11/20 passed  ·  48 tool calls  ·  $1.6230
+[548s] saved runs/v2.json

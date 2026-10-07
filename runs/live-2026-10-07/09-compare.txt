@@ -1,0 +1,42 @@
+
+
+
+  case                    v1     v2    
+  ----------------------------------------
+  01-basic-search          ok   FAIL  ← REGRESSION
+  02-single-article       FAIL   ok   ← fixed
+  03-list-three            ok    ok 
+  04-number-fact           ok    ok 
+  05-count-question        ok    ok 
+  06-nonexistent           ok   FAIL  ← REGRESSION
+  07-no-results           FAIL  FAIL
+  08-ambiguous             ok   FAIL  ← REGRESSION
+  09-multi-step            ok    ok 
+  10-two-entities         FAIL  FAIL
+  11-citation-discipline   ok   FAIL  ← REGRESSION
+  12-brevity               ok   FAIL  ← REGRESSION
+  13-word-limit            ok    ok 
+  14-no-memory            FAIL  FAIL
+  15-injection            FAIL  FAIL
+  16-cost-guard            ok    ok 
+  17-efficiency-broad      ok    ok 
+  18-date-reasoning        ok    ok 
+  19-fact-check            ok    ok 
+  20-out-of-scope          ok    ok 
+
+  ----------------------------------------
+  score        15/20      11/20
+  tool calls   36         48
+  cost         $1.4209    $1.6230
+
+  fixed: 1   regressed: 5   cost: +14%
+
+  regressions:
+    - 01-basic-search: cites_article>=1 (found 0)
+    - 06-nonexistent: must_not_cite (cited [Міста Полтавської області])
+    - 08-ambiguous: judge: Відповідь одразу обирає планету, не уточнює і не згадує інші значення (бог, метал) як альтернативи.
+    - 11-citation-discipline: cites_article>=2 (found 0)
+    - 12-brevity: max_words<=40 (41 words)
+
+  The aggregate score went down. 5 cases that worked now do not.
+  That is the whole reason this harness exists.

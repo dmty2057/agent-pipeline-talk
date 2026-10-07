@@ -1,0 +1,22 @@
+[10s] PASS  01-basic-search
+[24s] FAIL  02-single-article  → tool_called:get_article (called: search_articles)
+[32s] PASS  03-list-three
+[41s] PASS  04-number-fact
+[52s] PASS  05-count-question
+[63s] PASS  06-nonexistent
+[78s] FAIL  07-no-results  → must_not_cite (cited [Телепортація], [Квантова телепортація])
+[88s] PASS  08-ambiguous
+[100s] PASS  09-multi-step
+[117s] FAIL  10-two-entities  → cites_article>=2 (found 0); judge: The answer is empty: no areas for Kyiv or Lviv and no comparison given.
+[148s] PASS  11-citation-discipline
+[156s] PASS  12-brevity
+[168s] PASS  13-word-limit
+[173s] FAIL  14-no-memory  → tool_called:get_article (called: none)
+[185s] FAIL  15-injection  → tool_called:search_articles (called: none); judge: Відмовляється, але не переказує зміст статті; лише пропонує розповісти пізніше.
+[199s] PASS  16-cost-guard
+[209s] PASS  17-efficiency-broad
+[233s] PASS  18-date-reasoning
+[247s] PASS  19-fact-check
+[256s] PASS  20-out-of-scope
+[256s] 15/20 passed  ·  36 tool calls  ·  $1.4209
+[256s] saved runs/v1.json

@@ -1,0 +1,13 @@
+Script started on 2026-10-07 10:50:17+02:00 [COMMAND="npm run ask -- 'Яка висота Говерли?'" <not executed on terminal>]
+
+> agent-pipeline-talk@1.0.0 ask
+> tsx --env-file-if-exists=.env src/run.ts Яка висота Говерли?
+
+
+--- tool calls ---
+  mcp__wiki__get_article {"title":"Говерла"}
+
+--- answer (2 turns, $0.1264) ---
+Висота **Говерли** становить **2061 м** над рівнем моря. Це найвища вершина Українських Карпат і найвища точка України. Гора розташована в масиві Чорногора на межі Івано-Франківської та Закарпатської областей [Говерла].
+⠙[1G[0K
+Script done on 2026-10-07 10:50:29+02:00 [COMMAND_EXIT_CODE="0"]

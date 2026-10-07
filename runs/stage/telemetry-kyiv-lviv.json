@@ -1,0 +1,738 @@
+{
+  "description": "Real OpenTelemetry spans of one agent run (question: «Порівняй площу Києва і Львова.»), exported from Langfuse. Personal fields removed, home path shortened to ~.",
+  "sessionId": "a39dea05-47f8-4d56-97dd-e836bfeef0f6",
+  "spanCount": 33,
+  "spans": [
+    {
+      "name": "agent.run",
+      "traceId": "309360cfd3bd8fc3d437106ed06d23af",
+      "spanId": "559e298902f4b27c",
+      "parentSpanId": null,
+      "startTime": "2026-10-02T09:11:54.143Z",
+      "endTime": "2026-10-02T09:12:10.874Z",
+      "durationMs": 16731,
+      "attributes": {
+        "prompt.version": "v1",
+        "question": "Порівняй площу Києва і Львова.",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6",
+        "tool_calls": "7",
+        "turns": "10",
+        "cost_usd": "0.11969455"
+      },
+      "resource": {},
+      "scope": "agent-pipeline-talk"
+    },
+    {
+      "name": "claude_code.llm_request",
+      "traceId": "f1b728cdc27c8bde11ab8c44eec3547a",
+      "spanId": "4bc44099dce355d3",
+      "parentSpanId": null,
+      "startTime": "2026-10-02T09:11:55.050Z",
+      "endTime": "2026-10-02T09:11:56.764Z",
+      "durationMs": 1714,
+      "attributes": {
+        "attempt": 1,
+        "success": true,
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 0,
+        "output_tokens": 103,
+        "input_tokens": 1202,
+        "duration_ms": 1715,
+        "llm_request.context": "standalone",
+        "model": "claude-opus-4-5-20251101",
+        "span.type": "llm_request",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.llm_request",
+      "traceId": "e65abdc081b08a742c892896af1b3404",
+      "spanId": "5bd5b14d5da4fe86",
+      "parentSpanId": null,
+      "startTime": "2026-10-02T09:11:55.063Z",
+      "endTime": "2026-10-02T09:11:56.982Z",
+      "durationMs": 1919,
+      "attributes": {
+        "attempt": 1,
+        "success": true,
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 10798,
+        "output_tokens": 118,
+        "input_tokens": 3,
+        "duration_ms": 1919,
+        "llm_request.context": "standalone",
+        "model": "claude-haiku-4-5-20251001",
+        "span.type": "llm_request",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.llm_request",
+      "traceId": "7051d59d9740458ab85518be450692d4",
+      "spanId": "9ce0aeeb22159d72",
+      "parentSpanId": null,
+      "startTime": "2026-10-02T09:11:55.063Z",
+      "endTime": "2026-10-02T09:11:57.218Z",
+      "durationMs": 2155,
+      "attributes": {
+        "attempt": 1,
+        "success": true,
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 0,
+        "output_tokens": 57,
+        "input_tokens": 3775,
+        "duration_ms": 2155,
+        "llm_request.context": "standalone",
+        "model": "claude-opus-4-5-20251101",
+        "span.type": "llm_request",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.llm_request",
+      "traceId": "e355b712717fbd9b1c214daefdaebf9c",
+      "spanId": "35c44b6c5fa2ef8a",
+      "parentSpanId": null,
+      "startTime": "2026-10-02T09:11:55.064Z",
+      "endTime": "2026-10-02T09:11:57.965Z",
+      "durationMs": 2901,
+      "attributes": {
+        "attempt": 1,
+        "success": true,
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 10915,
+        "output_tokens": 138,
+        "input_tokens": 3,
+        "duration_ms": 2901,
+        "llm_request.context": "standalone",
+        "model": "claude-opus-4-5-20251101",
+        "span.type": "llm_request",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool",
+      "traceId": "50888f8c06c7d11176526c40a82cd1b1",
+      "spanId": "4829904edef8d8f5",
+      "parentSpanId": null,
+      "startTime": "2026-10-02T09:11:56.772Z",
+      "endTime": "2026-10-02T09:11:57.235Z",
+      "durationMs": 463,
+      "attributes": {
+        "duration_ms": 463,
+        "tool_name": "mcp__wiki__get_article",
+        "span.type": "tool",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool.blocked_on_user",
+      "traceId": "50888f8c06c7d11176526c40a82cd1b1",
+      "spanId": "94697c9454356ed0",
+      "parentSpanId": "4829904edef8d8f5",
+      "startTime": "2026-10-02T09:11:56.773Z",
+      "endTime": "2026-10-02T09:11:56.774Z",
+      "durationMs": 1,
+      "attributes": {
+        "source": "unknown",
+        "decision": "unknown",
+        "duration_ms": 1,
+        "span.type": "tool.blocked_on_user",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool.execution",
+      "traceId": "50888f8c06c7d11176526c40a82cd1b1",
+      "spanId": "2cc273d9fc35ad09",
+      "parentSpanId": "4829904edef8d8f5",
+      "startTime": "2026-10-02T09:11:56.774Z",
+      "endTime": "2026-10-02T09:11:57.235Z",
+      "durationMs": 461,
+      "attributes": {
+        "success": true,
+        "duration_ms": 461,
+        "span.type": "tool.execution",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool.blocked_on_user",
+      "traceId": "be99866b9bc129053932aa38039b3742",
+      "spanId": "f7f19f9a25322fa2",
+      "parentSpanId": "2ca02bf8a7d7d6ee",
+      "startTime": "2026-10-02T09:11:57.246Z",
+      "endTime": "2026-10-02T09:11:57.246Z",
+      "durationMs": 0,
+      "attributes": {
+        "source": "unknown",
+        "decision": "unknown",
+        "duration_ms": 0,
+        "span.type": "tool.blocked_on_user",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool",
+      "traceId": "be99866b9bc129053932aa38039b3742",
+      "spanId": "2ca02bf8a7d7d6ee",
+      "parentSpanId": null,
+      "startTime": "2026-10-02T09:11:57.246Z",
+      "endTime": "2026-10-02T09:11:57.461Z",
+      "durationMs": 215,
+      "attributes": {
+        "duration_ms": 215,
+        "tool_name": "mcp__wiki__get_article",
+        "span.type": "tool",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool.execution",
+      "traceId": "be99866b9bc129053932aa38039b3742",
+      "spanId": "f7efea4a6743316b",
+      "parentSpanId": "2ca02bf8a7d7d6ee",
+      "startTime": "2026-10-02T09:11:57.247Z",
+      "endTime": "2026-10-02T09:11:57.461Z",
+      "durationMs": 214,
+      "attributes": {
+        "success": true,
+        "duration_ms": 214,
+        "span.type": "tool.execution",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.llm_request",
+      "traceId": "d493677ea8b264caa3902dbf2b7d7c40",
+      "spanId": "72b908ed195ff37a",
+      "parentSpanId": null,
+      "startTime": "2026-10-02T09:11:57.487Z",
+      "endTime": "2026-10-02T09:12:00.498Z",
+      "durationMs": 3011,
+      "attributes": {
+        "attempt": 1,
+        "success": true,
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 0,
+        "output_tokens": 154,
+        "input_tokens": 2442,
+        "duration_ms": 3011,
+        "llm_request.context": "standalone",
+        "model": "claude-opus-4-5-20251101",
+        "span.type": "llm_request",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool.blocked_on_user",
+      "traceId": "3f097e174fd7ccb1b82adb918e9e9af2",
+      "spanId": "64bd28a45209f170",
+      "parentSpanId": "1cb1432a2816b92c",
+      "startTime": "2026-10-02T09:11:57.978Z",
+      "endTime": "2026-10-02T09:11:57.978Z",
+      "durationMs": 0,
+      "attributes": {
+        "source": "unknown",
+        "decision": "reject",
+        "duration_ms": 0,
+        "span.type": "tool.blocked_on_user",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool",
+      "traceId": "3f097e174fd7ccb1b82adb918e9e9af2",
+      "spanId": "1cb1432a2816b92c",
+      "parentSpanId": null,
+      "startTime": "2026-10-02T09:11:57.978Z",
+      "endTime": "2026-10-02T09:11:57.978Z",
+      "durationMs": 0,
+      "attributes": {
+        "duration_ms": 0,
+        "full_command": "ls -la ~/Desktop/presentation/agent-pipeline-talk-wiki",
+        "tool_name": "Bash",
+        "span.type": "tool",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.llm_request",
+      "traceId": "bc0723da2ad80b7b6d6581f7ae2ebdd3",
+      "spanId": "7a557a2c2b58b7cb",
+      "parentSpanId": null,
+      "startTime": "2026-10-02T09:11:58.008Z",
+      "endTime": "2026-10-02T09:12:00.986Z",
+      "durationMs": 2978,
+      "attributes": {
+        "attempt": 1,
+        "success": true,
+        "cache_creation_tokens": 198,
+        "cache_read_tokens": 10915,
+        "output_tokens": 112,
+        "input_tokens": 1,
+        "duration_ms": 2978,
+        "llm_request.context": "standalone",
+        "model": "claude-opus-4-5-20251101",
+        "span.type": "llm_request",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool",
+      "traceId": "a36c7870ed2d6c725f0f4e22feaa7499",
+      "spanId": "ec5c5d267713b094",
+      "parentSpanId": null,
+      "startTime": "2026-10-02T09:12:00.500Z",
+      "endTime": "2026-10-02T09:12:00.966Z",
+      "durationMs": 466,
+      "attributes": {
+        "duration_ms": 467,
+        "tool_name": "mcp__wiki__search_articles",
+        "span.type": "tool",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool.execution",
+      "traceId": "a36c7870ed2d6c725f0f4e22feaa7499",
+      "spanId": "e94c9c31229336a2",
+      "parentSpanId": "ec5c5d267713b094",
+      "startTime": "2026-10-02T09:12:00.501Z",
+      "endTime": "2026-10-02T09:12:00.966Z",
+      "durationMs": 465,
+      "attributes": {
+        "success": true,
+        "duration_ms": 466,
+        "span.type": "tool.execution",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool.blocked_on_user",
+      "traceId": "a36c7870ed2d6c725f0f4e22feaa7499",
+      "spanId": "6b2a03959ac52e1e",
+      "parentSpanId": "ec5c5d267713b094",
+      "startTime": "2026-10-02T09:12:00.501Z",
+      "endTime": "2026-10-02T09:12:00.501Z",
+      "durationMs": 0,
+      "attributes": {
+        "source": "unknown",
+        "decision": "unknown",
+        "duration_ms": 0,
+        "span.type": "tool.blocked_on_user",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool.blocked_on_user",
+      "traceId": "c21fa090f28716565c0e9ed9b09a7a3c",
+      "spanId": "a5fc2892ea0e4ffe",
+      "parentSpanId": "9184c0b41b83eb51",
+      "startTime": "2026-10-02T09:12:00.989Z",
+      "endTime": "2026-10-02T09:12:00.989Z",
+      "durationMs": 0,
+      "attributes": {
+        "source": "unknown",
+        "decision": "unknown",
+        "duration_ms": 1,
+        "span.type": "tool.blocked_on_user",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool",
+      "traceId": "c21fa090f28716565c0e9ed9b09a7a3c",
+      "spanId": "9184c0b41b83eb51",
+      "parentSpanId": null,
+      "startTime": "2026-10-02T09:12:00.989Z",
+      "endTime": "2026-10-02T09:12:01.305Z",
+      "durationMs": 316,
+      "attributes": {
+        "duration_ms": 316,
+        "tool_name": "mcp__wiki__search_articles",
+        "span.type": "tool",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool.execution",
+      "traceId": "c21fa090f28716565c0e9ed9b09a7a3c",
+      "spanId": "fe7d8f63da4f059c",
+      "parentSpanId": "9184c0b41b83eb51",
+      "startTime": "2026-10-02T09:12:00.990Z",
+      "endTime": "2026-10-02T09:12:01.305Z",
+      "durationMs": 315,
+      "attributes": {
+        "success": true,
+        "duration_ms": 315,
+        "span.type": "tool.execution",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.llm_request",
+      "traceId": "9d1d01d834dc1ba64d520fc9b1f52790",
+      "spanId": "0beff6357af608e6",
+      "parentSpanId": null,
+      "startTime": "2026-10-02T09:12:01.330Z",
+      "endTime": "2026-10-02T09:12:03.897Z",
+      "durationMs": 2567,
+      "attributes": {
+        "attempt": 1,
+        "success": true,
+        "cache_creation_tokens": 4888,
+        "cache_read_tokens": 0,
+        "output_tokens": 104,
+        "input_tokens": 1,
+        "duration_ms": 2567,
+        "llm_request.context": "standalone",
+        "model": "claude-opus-4-5-20251101",
+        "span.type": "llm_request",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool",
+      "traceId": "c475122341d03cbf01714d097aeb5874",
+      "spanId": "e4b51e772fdcdd4b",
+      "parentSpanId": null,
+      "startTime": "2026-10-02T09:12:03.899Z",
+      "endTime": "2026-10-02T09:12:04.255Z",
+      "durationMs": 356,
+      "attributes": {
+        "duration_ms": 357,
+        "tool_name": "mcp__wiki__search_articles",
+        "span.type": "tool",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool.execution",
+      "traceId": "c475122341d03cbf01714d097aeb5874",
+      "spanId": "f63abb2bb4d8e074",
+      "parentSpanId": "e4b51e772fdcdd4b",
+      "startTime": "2026-10-02T09:12:03.900Z",
+      "endTime": "2026-10-02T09:12:04.255Z",
+      "durationMs": 355,
+      "attributes": {
+        "success": true,
+        "duration_ms": 356,
+        "span.type": "tool.execution",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool.blocked_on_user",
+      "traceId": "c475122341d03cbf01714d097aeb5874",
+      "spanId": "1b4100c178ba7032",
+      "parentSpanId": "e4b51e772fdcdd4b",
+      "startTime": "2026-10-02T09:12:03.900Z",
+      "endTime": "2026-10-02T09:12:03.900Z",
+      "durationMs": 0,
+      "attributes": {
+        "source": "unknown",
+        "decision": "unknown",
+        "duration_ms": 0,
+        "span.type": "tool.blocked_on_user",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.llm_request",
+      "traceId": "7db5692748349edaf352658d5d58a7cc",
+      "spanId": "b6866bd4589e1677",
+      "parentSpanId": null,
+      "startTime": "2026-10-02T09:12:04.293Z",
+      "endTime": "2026-10-02T09:12:05.895Z",
+      "durationMs": 1602,
+      "attributes": {
+        "attempt": 1,
+        "success": true,
+        "cache_creation_tokens": 1115,
+        "cache_read_tokens": 4888,
+        "output_tokens": 61,
+        "input_tokens": 1,
+        "duration_ms": 1602,
+        "llm_request.context": "standalone",
+        "model": "claude-opus-4-5-20251101",
+        "span.type": "llm_request",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool",
+      "traceId": "c73803de47db4e6c9aa7803404cd39b3",
+      "spanId": "9e88f236b6c2a1e1",
+      "parentSpanId": null,
+      "startTime": "2026-10-02T09:12:05.898Z",
+      "endTime": "2026-10-02T09:12:06.219Z",
+      "durationMs": 321,
+      "attributes": {
+        "duration_ms": 322,
+        "tool_name": "mcp__wiki__get_article",
+        "span.type": "tool",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool.execution",
+      "traceId": "c73803de47db4e6c9aa7803404cd39b3",
+      "spanId": "8a4b91e296ff260b",
+      "parentSpanId": "9e88f236b6c2a1e1",
+      "startTime": "2026-10-02T09:12:05.899Z",
+      "endTime": "2026-10-02T09:12:06.219Z",
+      "durationMs": 320,
+      "attributes": {
+        "success": true,
+        "duration_ms": 321,
+        "span.type": "tool.execution",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool.blocked_on_user",
+      "traceId": "c73803de47db4e6c9aa7803404cd39b3",
+      "spanId": "624d29f81944c4ff",
+      "parentSpanId": "9e88f236b6c2a1e1",
+      "startTime": "2026-10-02T09:12:05.899Z",
+      "endTime": "2026-10-02T09:12:05.899Z",
+      "durationMs": 0,
+      "attributes": {
+        "source": "unknown",
+        "decision": "unknown",
+        "duration_ms": 0,
+        "span.type": "tool.blocked_on_user",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.llm_request",
+      "traceId": "3f2a4d0e2bdd4c5b4eab46b458ad327b",
+      "spanId": "8152be66396b7ccd",
+      "parentSpanId": null,
+      "startTime": "2026-10-02T09:12:06.262Z",
+      "endTime": "2026-10-02T09:12:09.745Z",
+      "durationMs": 3483,
+      "attributes": {
+        "attempt": 1,
+        "success": true,
+        "cache_creation_tokens": 708,
+        "cache_read_tokens": 6003,
+        "output_tokens": 125,
+        "input_tokens": 1,
+        "duration_ms": 3483,
+        "llm_request.context": "standalone",
+        "model": "claude-opus-4-5-20251101",
+        "span.type": "llm_request",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool",
+      "traceId": "1b1146b1b73bd2023ee5c325b0a04a72",
+      "spanId": "eee8f1ffad4fd814",
+      "parentSpanId": null,
+      "startTime": "2026-10-02T09:12:09.750Z",
+      "endTime": "2026-10-02T09:12:10.214Z",
+      "durationMs": 464,
+      "attributes": {
+        "duration_ms": 464,
+        "tool_name": "mcp__wiki__search_articles",
+        "span.type": "tool",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool.blocked_on_user",
+      "traceId": "1b1146b1b73bd2023ee5c325b0a04a72",
+      "spanId": "3dca8f67130ea73c",
+      "parentSpanId": "eee8f1ffad4fd814",
+      "startTime": "2026-10-02T09:12:09.750Z",
+      "endTime": "2026-10-02T09:12:09.751Z",
+      "durationMs": 1,
+      "attributes": {
+        "source": "unknown",
+        "decision": "unknown",
+        "duration_ms": 1,
+        "span.type": "tool.blocked_on_user",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool.execution",
+      "traceId": "1b1146b1b73bd2023ee5c325b0a04a72",
+      "spanId": "b40741353b676f38",
+      "parentSpanId": "eee8f1ffad4fd814",
+      "startTime": "2026-10-02T09:12:09.751Z",
+      "endTime": "2026-10-02T09:12:10.214Z",
+      "durationMs": 463,
+      "attributes": {
+        "success": true,
+        "duration_ms": 463,
+        "span.type": "tool.execution",
+        "session.id": "a39dea05-47f8-4d56-97dd-e836bfeef0f6"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "description": "Real OpenTelemetry spans of one agent run (question: «Яка висота Говерли?»), exported from Langfuse. Personal fields removed, home path shortened to ~.",
+  "sessionId": "3d67d9f1-afc4-4af2-a51b-1759ace6a93f",
+  "spanCount": 11,
+  "spans": [
+    {
+      "name": "agent.run",
+      "traceId": "26d2a7e0cecf2dd269616502ddb44af4",
+      "spanId": "d799e8310135b8f3",
+      "parentSpanId": null,
+      "startTime": "2026-10-07T08:50:18.097Z",
+      "endTime": "2026-10-07T08:50:24.412Z",
+      "durationMs": 6315,
+      "attributes": {
+        "prompt.version": "v1",
+        "question": "Яка висота Говерли?",
+        "session.id": "3d67d9f1-afc4-4af2-a51b-1759ace6a93f",
+        "tool_calls": "1",
+        "turns": "2",
+        "cost_usd": "0.12638425"
+      },
+      "resource": {},
+      "scope": "agent-pipeline-talk"
+    },
+    {
+      "name": "claude_code.llm_request",
+      "traceId": "56bf1c6cf669ba54e5cbfc8a4f032ab9",
+      "spanId": "ea1d421e8a96d578",
+      "parentSpanId": null,
+      "startTime": "2026-10-07T08:50:19.135Z",
+      "endTime": "2026-10-07T08:50:20.855Z",
+      "durationMs": 1720,
+      "attributes": {
+        "attempt": 1,
+        "success": true,
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 0,
+        "output_tokens": 61,
+        "input_tokens": 1197,
+        "duration_ms": 1721,
+        "llm_request.context": "standalone",
+        "model": "claude-opus-4-5-20251101",
+        "span.type": "llm_request",
+        "session.id": "3d67d9f1-afc4-4af2-a51b-1759ace6a93f"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.llm_request",
+      "traceId": "01b75640d9a4644c59ae3d03a2c64645",
+      "spanId": "dff26832fe0b2150",
+      "parentSpanId": null,
+      "startTime": "2026-10-07T08:50:19.171Z",
+      "endTime": "2026-10-07T08:50:21.576Z",
+      "durationMs": 2405,
+      "attributes": {
+        "attempt": 1,
+        "success": true,
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 0,
+        "output_tokens": 78,
+        "input_tokens": 3775,
+        "duration_ms": 2406,
+        "llm_request.context": "standalone",
+        "model": "claude-opus-4-5-20251101",
+        "span.type": "llm_request",
+        "session.id": "3d67d9f1-afc4-4af2-a51b-1759ace6a93f"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.llm_request",
+      "traceId": "9fc2bf860832b2cf66fe53e22dbb7c86",
+      "spanId": "acdb84aff048dbfc",
+      "parentSpanId": null,
+      "startTime": "2026-10-07T08:50:19.172Z",
+      "endTime": "2026-10-07T08:50:21.691Z",
+      "durationMs": 2519,
+      "attributes": {
+        "attempt": 1,
+        "success": true,
+        "cache_creation_tokens": 10798,
+        "cache_read_tokens": 0,
+        "output_tokens": 168,
+        "input_tokens": 3,
+        "duration_ms": 2520,
+        "llm_request.context": "standalone",
+        "model": "claude-haiku-4-5-20251001",
+        "span.type": "llm_request",
+        "session.id": "3d67d9f1-afc4-4af2-a51b-1759ace6a93f"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.llm_request",
+      "traceId": "cb144132e36b75fc802431a83fa75ae4",
+      "spanId": "8464a99ed63de8ff",
+      "parentSpanId": null,
+      "startTime": "2026-10-07T08:50:19.172Z",
+      "endTime": "2026-10-07T08:50:21.935Z",
+      "durationMs": 2763,
+      "attributes": {
+        "attempt": 1,
+        "success": true,
+        "cache_creation_tokens": 10915,
+        "cache_read_tokens": 0,
+        "output_tokens": 156,
+        "input_tokens": 3,
+        "duration_ms": 2764,
+        "llm_request.context": "standalone",
+        "model": "claude-opus-4-5-20251101",
+        "span.type": "llm_request",
+        "session.id": "3d67d9f1-afc4-4af2-a51b-1759ace6a93f"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool.blocked_on_user",
+      "traceId": "b6177a088fdf8318d1c86dd0eca5a365",
+      "spanId": "496600e8ef521c95",
+      "parentSpanId": "07ed5679b5d82219",
+      "startTime": "2026-10-07T08:50:20.858Z",
+      "endTime": "2026-10-07T08:50:20.858Z",
+      "durationMs": 0,
+      "attributes": {
+        "source": "unknown",
+        "decision": "unknown",
+        "duration_ms": 1,
+        "span.type": "tool.blocked_on_user",
+        "session.id": "3d67d9f1-afc4-4af2-a51b-1759ace6a93f"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool",
+      "traceId": "b6177a088fdf8318d1c86dd0eca5a365",
+      "spanId": "07ed5679b5d82219",
+      "parentSpanId": null,
+      "startTime": "2026-10-07T08:50:20.858Z",
+      "endTime": "2026-10-07T08:50:21.330Z",
+      "durationMs": 472,
+      "attributes": {
+        "duration_ms": 472,
+        "tool_name": "mcp__wiki__get_article",
+        "span.type": "tool",
+        "session.id": "3d67d9f1-afc4-4af2-a51b-1759ace6a93f"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool.execution",
+      "traceId": "b6177a088fdf8318d1c86dd0eca5a365",
+      "spanId": "c44ee6c45fb3cce9",
+      "parentSpanId": "07ed5679b5d82219",
+      "startTime": "2026-10-07T08:50:20.859Z",
+      "endTime": "2026-10-07T08:50:21.329Z",
+      "durationMs": 470,
+      "attributes": {
+        "success": true,
+        "duration_ms": 471,
+        "span.type": "tool.execution",
+        "session.id": "3d67d9f1-afc4-4af2-a51b-1759ace6a93f"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.llm_request",
+      "traceId": "1d4780c5f5a8c6e6e3575a17924e3b09",
+      "spanId": "e40650ae9bc5c768",
+      "parentSpanId": null,
+      "startTime": "2026-10-07T08:50:21.350Z",
+      "endTime": "2026-10-07T08:50:23.632Z",
+      "durationMs": 2282,
+      "attributes": {
+        "attempt": 1,
+        "success": true,
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 0,
+        "output_tokens": 92,
+        "input_tokens": 1855,
+        "duration_ms": 2282,
+        "llm_request.context": "standalone",
+        "model": "claude-opus-4-5-20251101",
+        "span.type": "llm_request",
+        "session.id": "3d67d9f1-afc4-4af2-a51b-1759ace6a93f"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool.blocked_on_user",
+      "traceId": "fc5083866945fa2f7f7de9d47b35c8da",
+      "spanId": "f6efdde5252a7d51",
+      "parentSpanId": "bdbb312082b90f01",
+      "startTime": "2026-10-07T08:50:21.947Z",
+      "endTime": "2026-10-07T08:50:21.947Z",
+      "durationMs": 0,
+      "attributes": {
+        "source": "unknown",
+        "decision": "reject",
+        "duration_ms": 0,
+        "span.type": "tool.blocked_on_user",
+        "session.id": "3d67d9f1-afc4-4af2-a51b-1759ace6a93f"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    },
+    {
+      "name": "claude_code.tool",
+      "traceId": "fc5083866945fa2f7f7de9d47b35c8da",
+      "spanId": "bdbb312082b90f01",
+      "parentSpanId": null,
+      "startTime": "2026-10-07T08:50:21.947Z",
+      "endTime": "2026-10-07T08:50:21.947Z",
+      "durationMs": 0,
+      "attributes": {
+        "duration_ms": 0,
+        "full_command": "ls -la ~/Desktop/presentation/agent-pipeline-talk-wiki",
+        "tool_name": "Bash",
+        "span.type": "tool",
+        "session.id": "3d67d9f1-afc4-4af2-a51b-1759ace6a93f"
+      },
+      "resource": {
+        "service.version": "2.0.77",
+        "service.name": "claude-code"
+      },
+      "scope": "com.anthropic.claude_code.tracing"
+    }
+  ]
+}
